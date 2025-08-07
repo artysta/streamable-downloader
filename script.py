@@ -68,7 +68,6 @@ def on_download_click():
     threading.Thread(target=download_streamable_video, args=(video_code, status_label, custom_title), daemon=True).start()
 
 # --- GUI ---
-
 root = tk.Tk()
 root.title("Streamable Downloader")
 
@@ -88,3 +87,4 @@ status_label = tk.Label(root, text="")
 status_label.pack(padx=10, pady=5)
 
 root.mainloop()
+
